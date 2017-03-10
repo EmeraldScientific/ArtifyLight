@@ -132,8 +132,22 @@ a.btn.alt,
     background: #28aa4d
 }
 
-#socnet {
-    float: right;
-    margin-top: -40px; 
-    margin-bottom: 0px;
+.fa-facebook,
+.fa-twitter,
+.fa-shopping-cart {
+    font-size: 200%;  
 }
+
+.fa-twitter {
+    padding-right: 20px;
+}
+
+/* Begin remove product review selection options -----> */
+#ProductReviews {
+    display: none;
+}
+
+.product-nav #sort option[value="avgcustomerreview"] {
+    display: none;
+}
+/* ---> end product review options */

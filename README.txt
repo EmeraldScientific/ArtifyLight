@@ -1,3 +1,5 @@
+A customized BluePrint theme
+
 Bigcommerce Template Customization
 -----------------------------------
 
