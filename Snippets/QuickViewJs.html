@@ -1,0 +1,11 @@
+ShowImageZoomer = false;
+$(document).ready(function() {
+    if(parseInt(jQuery(window).width())>767){
+    $(".QuickView").quickview({
+        buttonText: "%%GLOBAL_QuickViewButtonText%%",
+        buttonColor: "%%GLOBAL_QuickViewButtonColor%%",
+        gradientColor: "%%GLOBAL_QuickViewGradientColor%%",
+        textColor: "%%GLOBAL_QuickViewTextColor%%"
+    });
+}
+});

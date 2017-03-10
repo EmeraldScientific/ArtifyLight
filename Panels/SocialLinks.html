@@ -1,0 +1,11 @@
+<div id="socnet" class="Block SocialConnect Moveable Panel">
+    <h4>Connect with us</h4>
+    <ul>
+        %%SNIPPET_SocialLinks%%
+    </ul>
+</div>
+<script>
+    jQuery('#socnet ul li').each(function(){
+        jQuery(this).find('a').attr('target','_blank');
+    });
+</script>

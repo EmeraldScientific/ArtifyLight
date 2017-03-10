@@ -1,0 +1,42 @@
+    
+<div class="TopMenu">
+    <div class="inner">
+        <div class="currency-converter FloatLeft">
+            <a href="javascript:void(0);" title="%%GLOBAL_AllPricesAreInCurrency%%" class="headercurrency">%%GLOBAL_AllPricesAreInCurrency%%</a>
+            %%Panel.SideCurrencySelector%%
+        </div>
+        <div class="FloatLeft cartontop">
+            <i class="fa fa-shopping-cart" title="View Cart">&nbsp;</i><a href="%%GLOBAL_ShopPathNormal%%/cart.php" title="%%LNG_ViewCart%%">Shopping Cart<span>%%GLOBAL_CartItems%%</span></a>
+        </div>
+        <a href="javascript:void(0);" class="mobileView topMenuIcon FloatRight">Menu</a>
+        <div class="FloatRight menucover">
+            <ul style="display:%%GLOBAL_HidePurchasingOptions%%">
+                <li style="display:%%GLOBAL_HideAccountOptions%%" class="CompareItem">
+                    <a onclick="compareNow()" href="javascript:void(0)">Compare <span>(0 Item)</span></a>
+                </li>
+                <li style="display:%%GLOBAL_HideAccountOptions%%" class="First">
+                    <a href="%%GLOBAL_ShopPath%%/account.php">%%LNG_YourAccount%%</a>
+                </li>
+                %%SNIPPET_TopMenuGiftCertificates%%
+                <li class="last" style="display:%%GLOBAL_HideAccountOptions%%">
+                    <div>%%GLOBAL_LoginOrLogoutText%%</div>
+                </li>
+                <li class="last CartLink" style="display:none;">
+                    <i class="icon" title="View Cart">&nbsp;</i><a href="%%GLOBAL_ShopPathNormal%%/cart.php" title="%%LNG_ViewCart%%"><span>%%GLOBAL_CartItems%%</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    jQuery(".topMenuIcon").click(function(){
+    jQuery(".TopMenu .menucover").slideToggle("fast");
+    });
+    jQuery(document).ready(function(){
+    //var currency = jQuery(".footercurrency").detach();
+    //jQuery(".headercurrency").append(currency);
+    
+    });
+    
+    
+</script>

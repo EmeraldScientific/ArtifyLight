@@ -1,0 +1,39 @@
+<ul class="ProductList List">
+    {{#variants}}
+    <li class="%%GLOBAL_AlternateClass%% Odd ListView QuickView" data-product="{{ product.id }}">
+        <div class="ProductImage">
+            <a href="{{ product.url }}">
+                <img src="{{ product.default_image.thumbnail_url }}" alt="{{ product.name }}" />
+            </a>
+        </div>
+        <div class="mosaic-block bar2">    
+            <a href="javascript:void(0)">
+                <div class="details">
+                    <h4 onclick="window.location='{{ product.url }}'" id="link_%%GLOBAL_ProductId%%" data-href="{{ product.url }}">{{ product.name }}</h4>
+                    <p class="ProductDescription">{{{  product.description }}}</p>
+                </div>
+                <div class="clearfix productspace">
+                    <em class="p-price">{{{ formatProductCatalogPrice . }}}</em>
+                    {{#if product.rating}}
+                    <div class="ProductPriceRating">
+                        <span class="Rating Rating{{ product.rating }}">
+                            <img src="%%GLOBAL_TPL_PATH%%/images/IcoRating{{ product.rating }}.png" alt="{{ product.rating }}" style="" />
+                        </span>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="clearfix productsbox">
+                    <div class="ProductActionAdd" style="display:%%GLOBAL_HideActionAdd%%;">
+                        
+                        <div class="addtowishlist"><button type="button" title="Add To Wishlist" onclick="addToWishList('%%GLOBAL_ProductLink%%','%%GLOBAL_ProductId%%')" class="fa fa-heart"></button></div>
+                        
+                        <div class="compare"><button type="button" title="Add to Compare"  onclick="addToCompare('%%GLOBAL_ProductId%%');" class="fa fa-random"></button></div>
+                        
+                        <button data-href='{{ product.add_url }}' type="button" class="btn addToCartButton fa fa-{{ product.add_text }}" title="{{ product.add_text }}">{{ product.add_text }}</button>
+                    </div>
+                </div>
+            </a>
+        </div>   
+    </li>
+    {{/variants}}
+</ul>

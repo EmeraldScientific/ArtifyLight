@@ -1,0 +1,78 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+%%Panel.HTMLHead%%
+<body class="BlogPage">
+    <script type="text/javascript">
+          //<![CDATA[ 
+        $(window).load(function() {
+        // Handler for .ready() called.
+        
+        var currentTallest = 0,
+        currentRowStart = 0,
+        rowDivs = new Array(),
+        $el,
+        topPosition = 0;
+        
+        $('.equalize').each(function() {
+        
+        $el = $(this);
+        topPostion = $el.position().top;
+        
+        if (currentRowStart != topPostion) {
+        
+        // we just came to a new row.  Set all the heights on the completed row
+        for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+        rowDivs[currentDiv].height(currentTallest);
+        }
+        
+        // set the variables for the new row
+        rowDivs.length = 0; // empty the array
+        currentRowStart = topPostion;
+        currentTallest = $el.height();
+        rowDivs.push($el);
+        
+        } else {
+        
+        // another div on the current row.  Add it to the list and check if its taller
+        rowDivs.push($el);
+        currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+        
+        }
+        
+        // do the last row
+        for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+        rowDivs[currentDiv].height(currentTallest);
+        }
+        
+        });
+        });
+//]]>
+        </script>
+        <div class="page">
+            %%Panel.Header%%
+            <div class="main">
+                <div class="inner">
+                    %%Panel.NewsBreadcrumb%%
+                    %%Panel.WrapperBanner%%
+                    <div class="Left equalize" id="LayoutColumn1">
+                        %%Panel.BlogRecentPosts%%
+                    </div>
+                    
+                    <div class="Content" id="LayoutColumn2">
+                        <div class="BlockContent PageContent">
+                            <h1 itemprop="name" class="PostTitle">%%GLOBAL_PostTitle%%</h1>
+                            %%Panel.PostContent%%
+                            %%Panel.PostComments%%
+                        </div>
+                        <br class="Clear">
+                    </div>
+                </div>
+                <br class="Clear" />
+            </div>
+            %%Panel.Footer%%
+        </div>
+        </body>
+        </html>

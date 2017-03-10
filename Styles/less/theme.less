@@ -1,0 +1,287 @@
+// See the README for a guide on how to compile using LESS
+/*
+
+!!!!!!!!!! WARNING !!!!!!!!!!
+
+If you edit theme.css, your changes will be overwritten by any compilation of theme.less
+Please remember to replicate your changes in init.less, or just make your changes in another file if possible
+
+!!!!!!!!!! WARNING !!!!!!!!!!
+
+*/
+
+@import "style-editor-variables.less";
+
+body {
+	background: @color-page-background;
+	color: @color-page-text-color;
+}
+
+.footer-links{
+	color: @color-page-text-color;
+}
+
+.QuickSearch{
+	background: @color-page-background;
+}
+
+#ModalContentContainer, #ModalContent, .ModalContent {
+	background: @color-page-background !important;
+}
+.CartLink span, .Breadcrumb li, .FormFieldLabel, #ModalContent, .ModalContent, .fastCartItemBox p strong, .PrimaryProductDetails .ProductMain, .ProductDetailsGrid .Label, .ProductAddToCart .productAttributeLabel, .SortBox, div.checker span, div.checker span, div.radio span, .LittleNotePassword, .productAttributeValue span {
+	color: @color-page-text-color;
+}
+.TopMenu, .CompareItem a span, .fastCartSummaryBox .subtotal {
+	color: @color-page-text-color;	
+}
+.Left #SideCategoryList li li a, .Left .slist li li a, .Left #SideCategoryShopByPrice ul li a, .Right #SideCategoryShopByPrice ul li a, .ComparisonTable td {
+	color: @color-page-text-color;	
+}
+#PageContent .BlockContent li, .CategoryDescription li, .banner_home_page_top li, .banner_home_page_bottom li, .banner_category_page_top li, .banner_category_page_bottom li, .banner_brand_page_top li, .banner_brand_page_bottom li, .banner_search_page_top li, .banner_search_page_bottom li, .prodAccordionContent ul li, .PostBody li, .CartContents tfoot .SubTotal td em, .CartContents tfoot .gtotal.SubTotal td {
+	color: @color-page-text-color;	
+}
+#ModalContent, .ModalContent {
+	color: @color-page-text-color !important;
+}
+#Header {
+	background: @color-page-background;
+}
+.TopMenu, .footer-links {
+	background: @color-header-footer-bg;
+}
+#Logo a {
+	color: @color-store-name-color;
+}
+#Logo a:hover {
+	color: @color-store-name-color-hover;
+}
+.PageMenu, .PageMenu li ul {
+	background: @color-menu-background;
+}
+.PageMenu ul.sf-menu li ul li a { color: @color-header-text-icon;}
+
+.PageMenu li li:hover a, .PageMenu li ul li a:hover {background:@color-header-text-icon; } /* Second Level */
+.PageMenu li li:hover li a {background:@color-menu-background ; }
+.PageMenu li li li:hover a {background:@color-header-text-icon; } /* Third Level */
+.PageMenu li li li:hover li a {background:@color-menu-background; } 
+.PageMenu li li li li:hover a {background:@color-header-text-icon; }
+
+/*ul.sf-menu li.over ul li.over > a, .homeicon:hover a { color: @color-header-text-link-icon-hover; }*/
+
+h1, h2, h1.TitleHeading, .FeaturedProducts h2, .NewProducts h2, .PopularProducts h2, #SimilarProductsByCustomerViews h2, .SideRelatedProducts h2, #SimilarMultiProductsByCustomerViews h2, .PageContent h2, #LayoutColumn2 h2, .CategoryContent h2.TitleHeading {
+	color: @color-primary-title;
+}
+.CreateAccount h3, .AccountLogin h3, h3, h4, #WishListEditFrom h3, #WishListItems h3, #AccountOrder h3, .HorizontalFormContainer h3, .BlockContent.PageContent .BlogPostContent h3 a, .ProductDetailsGrid .DetailRow h4.BrandName a, .YourAccount h4 a, .CartCode h3, h5, .fastCartBottom h4 {
+	color: @color-secondary-title;
+}
+a, .TopMenu a, #ModalContent a, .ModalContent a, .footer-links a, .Breadcrumb li a, a.alt, p a, a.NextLink, .BulkDiscountLink a, .currency-converter p span, .CurrencyChooser a span {
+	color: @color-page-text-link;
+}
+a:hover, .TopMenu a:hover, .ProductList .ProductDetails strong a:hover, #ModalContent a:hover, .ModalContent a:hover, .footer-links a:hover, .Breadcrumb li a:hover, .BlockContent.PageContent a:hover, .page-content #LayoutColumn2 a:hover, .brand-name:hover, .BlockContent.PageContent .BlogPostContent h3 a:hover, .CartContents .ProductName a:hover, .footer-links a.backtoTop:hover {
+	color: @color-page-text-link-hover;
+}
+a.alt:hover, p a:hover, a.NextLink:hover, .BulkDiscountLink a:hover {
+	color: @color-page-text-link-hover;	
+}
+.newsletter-subscription h4, .Left .CategoryList h3, .Left #SideCategoryShopByPrice h3, .Left #GiftCertificatesMenu h3, .Left #SideSubPageList h3, .Left #SideShopByBrand h3, .CompareFieldTop {
+	color: @color-footer-sidebar-title-text;
+}
+.Left .AccountMenu h3, .Left #SideAccountStoreCredit h2, .Left #BlogRecentPosts h2 {
+	color: @color-footer-sidebar-title-text;	
+}
+.btn, .CartLink .icon, #SearchForm .Button, .icon-add, 
+.sharebutton {
+	background: @color-primary-btn-bg;
+	color: @color-primary-btn-text;
+}
+.compare button, .addtowishlist button, .quickview button,  .btn.addToCartButton {
+ 	background: @color-btn-bg;
+ 	color: @color-btn-text;
+}
+.compare button:hover, .addtowishlist button:hover, .quickview button:hover, #SearchForm .Button:hover, .btn.addToCartButton:hover {
+	background: @color-btn-bg-hover;
+	color: @color-btn-text-hover;
+}
+.ProductList .QuickViewBtn {
+	background: @color-btn-bg !important;
+	color: @color-btn-text !important;
+}
+.ProductList .QuickViewBtn:hover {
+	background: @color-btn-bg-hover !important;	
+	color: @color-btn-text-hover !important;
+}
+.ProductList li {
+	background: @color-listing-bg;
+	border-color: @color-listing-border;
+}
+
+.QuickSearch tbody tr:hover{
+	background: @color-listing-bg;
+}
+
+.btn:hover, #SearchForm .Button:hover, .CartLink .icon:hover, .header-right .CartLink:hover .icon, .icon-add:hover, 
+.sharebutton:hover {
+	background: @color-primary-btn-bg-hover;
+	color: @color-primary-btn-text-hover;
+}
+a.btn.alt, .btn.alt, .newsletter-subscription .btn, .ProductDetailsGrid .btn.alt, .CompareFieldTop a {
+	background: @color-secondary-btn-bg;
+	color: @color-secondary-btn-text;
+}
+.btn.alt:hover, .newsletter-subscription .btn:hover, .ProductDetailsGrid .btn.alt:hover, .CompareFieldTop a:hover {
+	background: @color-secondary-btn-bg-hover;
+	color: @color-secondary-btn-text-hover;
+}
+.ProductList .ProductDetails strong a, #ProductDetails h1, #ModalContent .fastCartItemBox a, .ModalContent .fastCartItemBox a, .CartContents .ProductName a, h1 .ProductImageName,.QuickSearchResultName a {
+	color: @color-product-name;
+}
+.ProductList .ProductDetails strong a:hover, #ModalContent .fastCartItemBox a:hover, .ModalContent .fastCartItemBox a:hover ,.QuickSearchResultName a:hover{
+	color: @color-page-common-background;
+}
+.QuickSearchAllResults:hover, .QuickSearchAllResults:hover a, .QuickSearchAllResults a:hover {
+	background: @color-page-common-background;
+}
+.ProductList .ProductPriceRating strong, .ProductDetailsGrid .p-price .ProductPrice, .fastCartItemBox .ProductPrice, .fastCartSummaryBox .subtotal .ProductPrice ,.QuickSearchResult .Price{
+	color: @color-product-price;
+}
+#socnet .icon-social, .CartLink b, .homeicon a, .PageMenu li a {
+	color: @color-header-text-icon;
+}
+.PageMenu li a:hover, .PageMenu li.ActivePage a, .PageMenu li.sfHover a, #socnet .icon-social:hover, .homeicon:hover a {
+	color: @color-header-text-link-icon-hover;
+}
+.Left .CategoryList h3, .Left #SideCategoryShopByPrice h3, .Left #GiftCertificatesMenu h3, .Left #SideSubPageList h3, .newsletter-subscription, .Left .BrandList h4, .CartContents thead, .productOptionViewRectangle .option.selectedValue label, #prodAccordion .subtitle, .brand-name, .cycle-pager span.cycle-pager-active, .Left .AccountMenu h3, .Left #SideAccountStoreCredit h2, .Left #BlogRecentPosts h2, .CompareFieldTop, #sidr-left h3, #sidr-left h2, .catgridname  {
+	background: @color-page-common-background;
+}
+.Left .CategoryList h3, .Left #SideCategoryShopByPrice h3, .Left #GiftCertificatesMenu h3, .Left #SideSubPageList h3, .Left #SideShopByBrand h3 {
+	background: @color-page-common-background;	
+}
+.CartContents tfoot .gtotal.SubTotal td em, .multiStep li a {
+	color: @color-page-common-background;
+}
+.multiStep li.ActivePage h4 {
+	border-color: @color-page-common-background;
+}
+html.javascript .productOptionViewRectangle .selectedValue label {
+	background: @color-page-common-background !important;	
+}
+#SearchForm input.Textbox, input.Textbox, textarea, input[type="text"], input[type="password"], div.selector select {
+	background: @color-input-background;
+	border-color: @color-input-border;
+	color: @color-input-text;
+}
+#SearchForm .Button,.CartLink .icon{
+	border-color: @color-input-border;
+}
+div.selector span, .HorizontalFormContainer dd .selector span {
+	background: @color-input-background;
+	color: @color-input-text;
+	border-color: @color-input-border;
+}
+input, select, textarea, input.text, input.email, input.password, textarea.uniform {
+	color: @color-input-text;
+}
+.newsletter-subscription input.Textbox, .newsletter-subscription textarea, .newsletter-subscription input[type="text"] {
+	background: @color-input-background;
+	color: @color-input-text;
+	border: 1px solid @color-input-border;
+}
+
+.btn.addToCartButton.icon-Out.of.stock.at.present {
+	background: @color-outofstock-background; color: @color-outofstock-color;
+}
+.TopMenu, table tbody tr td, table.General tbody tr td, table.CartContents tbody tr td { border-bottom-color: @color-common-border; }
+.QuickSearch,.selected-currency { border-color: @color-common-border; }
+.PageMenu { border-top-color: @color-common-border; border-bottom-color: @color-common-border;
+}
+
+.Left #SideCategoryList, .Left #SideCategoryShopByPrice, .Left #GiftCertificatesMenu, .Left #SideSubPageList, .Left #SideShopByBrand, .CurrencyChooser {
+	background: @color-sidebar-background;
+}
+.Left .AccountMenu, .Left #SideAccountStoreCredit, #BlogRecentPosts {
+	background: @color-sidebar-background;	
+}
+.Left #SideCategoryList li a, .Left .slist li a, .Left .afterSideShopByBrand a, .Left #GiftCertificatesMenu li a, .Left #SideAccountMenu li a, .Left #BlogRecentPosts li a {
+	color: @color-sidebar-text;
+} 
+.treeview .hitarea.expandable-hitarea, .treeview .hitarea.collapsable-hitarea {
+	color: @color-sidebar-text;	
+}
+.Left #SideCategoryList li a:hover, .Left .slist li a:hover, .Left .afterSideShopByBrand a:hover, .Left #GiftCertificatesMenu li a:hover, .Left #SideAccountMenu li a:hover, .Left #BlogRecentPosts li a:hover {
+	color: @color-sidebar-text-hover;
+}
+.CurrencyList dd, .Left #SideCategoryList li a:hover, .Left .slist li a:hover, .Left .afterSideShopByBrand a:hover, .Left #GiftCertificatesMenu li a:hover, .Left #SideAccountMenu li a:hover, .Left #BlogRecentPosts li a:hover, .Left #SideCategoryShopByPrice ul li a:hover, .Right #SideCategoryShopByPrice ul li a:hover {
+	background: @color-sidebar-background-hover;
+	color: @color-sidebar-text-hover;
+}
+.Left #SideCategoryList li, .Left .slist li, .Left .afterSideShopByBrand, .Left #GiftCertificatesMenu li, .Left #SideAccountMenu li, .Left #BlogRecentPosts li {
+	border-bottom-color: @color-sidebar-border;
+}
+.Left #SideCategoryShopByPrice ul li, .Right #SideCategoryShopByPrice ul li {
+	border-bottom-color: @color-sidebar-border;	
+}
+.treeview li li:first-child { border-top-color: @color-sidebar-border; }
+.Left #SideCategoryList li li a, .Left .slist li li a, .Left #SideCategoryShopByPrice ul li a, .Right #SideCategoryShopByPrice ul li a {
+	color: @color-sidebar-text;
+}
+.treeview ul {
+	background: @color-sidebar-background-hover;
+}
+.Left #SideCategoryList .treeview li li a:hover, .Left #SideCategoryList .treeview li li li a:hover, .Left #SideCategoryList .treeview li li li li a:hover {
+	background: @color-sidebar-background;
+}
+.afterSideShopByBrand a {
+	background: @color-sidebar-background-hover;
+	color: @color-sidebar-text-hover;
+}
+.ProductList li.onSale .saleLabel {
+	background: @color-onsale-bg;
+	color: @color-onsale-text;
+}
+.FeaturedProducts h2, .NewProducts h2, .PopularProducts h2, .TitleHeading, .borderB, .PageContent h1, .fastCartBottom h4 {
+	border-bottom-color: @color-common-border;
+}
+.PageContent .NewsDate, .PageContent .BlogPostContent {
+	border-top-color: @color-common-border;	
+}
+#WishLists, #WishListEditFrom, #AccountInbox, #AccountOrderStatus, #AccountOrders, #ChooseShippingAddress, #EditAccountForm, #AccountRecentItems, #ShippingAddressForm, #AccountOrder, #CompareContent, #ChooseBillingAddress, #PurchaseGiftCertificate, #GiftCertificateIntro, #CheckGiftCertificateBalance, .YourAccount, .PageContent, #ChooseShippingProvider, #ConfirmOrder, .CreateAccount, .AccountLogin, #CreateAccountForm .page-content {
+	background: @color-contentarea-bg;
+}
+.CategoryPagination, #ProductDetails .ProductThumbImage, .AddToWishlist .BlockContent, .ExpressCheckoutBlock .ExpressCheckoutTitle {
+	background: @color-contentarea-bg;	
+}
+.ExpressCheckoutContent .AddBillingAddress, #CheckoutStepShippingProvider .ExpressCheckoutContent, #CheckoutStepConfirmation .ExpressCheckoutContent {
+	background: @color-contentarea-bg;	
+}
+.CategoryPagination .PagingList a, .CategoryPagination .PagingList .ActivePage {
+	color: @color-page-text-link;
+}
+.CategoryPagination .PagingList a:hover{
+	color: @color-page-text-link-hover;	
+}
+#ProductDetails .ProductTinyImageList ul li {
+border-color: @color-common-border !important;	
+}
+.ProductList .ProductPriceRating strong .RetailPriceValue {
+	color: @color-retail-price;
+}
+#ModalContent a, .ModalContent a {
+	color: @color-page-text-link !important;
+}
+.ExpressCheckoutBlockCompleted .ExpressCheckoutCompletedContent {
+	border-left-color: @color-common-border;
+}
+#prodAccordion .subtitle {
+	color: @color-text-color;
+}
+#prodAccordion .current .subtitle {
+	color: @color-footer-sidebar-title-text;
+}
+.TabNav li a {
+	background: @color-bg-color;
+	color: @color-text-color;
+}
+.TabNav li.Active a {
+	background: @color-bg-active-color;
+	color: @color-text-active-color;
+}

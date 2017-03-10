@@ -1,0 +1,37 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+%%Panel.HTMLHead%%
+<body>
+    <script type="text/javascript" src="%%GLOBAL_TPL_PATH%%/js/cart.js?%%GLOBAL_JSCacheToken%%"></script>
+    <div class="page">
+        %%Panel.Header%%
+        <div class="main">
+            <div class="inner">
+                <div class="Content Widest" id="LayoutColumn1">
+                    %%Panel.CartBreadcrumb%%
+                    %%Panel.CartHeader%%
+                    <div class="fullwidth  PageContent">
+                        %%Panel.CartStatusMessage%%
+                        %%Panel.CartContent%%
+                        <div class="CartCode Block">
+                            <div class="grid">
+                                <div class="grid__item one-half">
+                                    %%Panel.CartCouponCodeBox%%
+                                </div>
+                                <div class="grid__item one-half">
+                                    %%Panel.CartGiftCertificateCodeBox%%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        %%Panel.Footer%%
+    </div>
+</body>
+</html>

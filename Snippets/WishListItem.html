@@ -1,0 +1,25 @@
+<li class="%%GLOBAL_AlternateClass%%">
+    <div class="cover">
+        <div class="ProductImage QuickView" data-product="%%GLOBAL_ProductId%%" id="img_%%GLOBAL_ProductId%%">
+            %%GLOBAL_ProductThumb%%
+        </div>
+        <div class="ProductDetails">
+            <strong><a href="%%GLOBAL_ProductLink%%" id="link_%%GLOBAL_ProductId%%">%%GLOBAL_ProductName%%</a></strong>
+        </div>
+        <div class="ProductPriceRating">
+            <strong>%%GLOBAL_ProductPrice%%</strong>
+            <span class="Rating Rating%%GLOBAL_ProductRating%%"><img src="%%GLOBAL_IMG_PATH%%/IcoRating%%GLOBAL_ProductRating%%.png" alt="" %%GLOBAL_ProductRatingImageDimensions%% style="%%GLOBAL_HideProductRating%%" /></span>
+        </div>
+        <div class="clearfix productsbox" >
+            <div class="ProductActionAdd" style="display:%%GLOBAL_HideActionAdd%%;">
+                <div class="compare"><button type="button" title="Add to Compare"  onclick="addToCompare('%%GLOBAL_ProductId%%');" class="fa fa-random"></button></div>
+                <form class="RemoveFromWishlistForm" action="%%GLOBAL_ShopPath%%/wishlist.php" method="get" style="%%GLOBAL_HideRemoveItemButton%%">
+                    <input type="hidden" name="wishlistid" value="%%GLOBAL_WishListID%%" />
+                    <input type="hidden" name="action" value="remove" />
+                    <input type="hidden" name="item_id" value="%%GLOBAL_ItemId%%" />
+                    <input type="submit" value="%%LNG_RemoveFromWishList%%" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+</li>

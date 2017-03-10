@@ -1,0 +1,35 @@
+<div class="Block Moveable Panel" id="SearchPage" style="display:%%GLOBAL_HideSearchPage%%">
+    <ul id="SearchTabsList" class="TabNav">
+        <li id="SearchProduct_Tab" class="%%GLOBAL_ProductTabActive%%"><a href="%%GLOBAL_ProductTabUrl%%" onclick="showSearchTabs('product'); return false;">%%LNG_SearchResultsTabProduct%%</a></li>
+        <li id="SearchContent_Tab" class="%%GLOBAL_ContentTabActive%%"><a href="%%GLOBAL_ContentTabUrl%%" onclick="showSearchTabs('content'); return false;">%%LNG_SearchResultsTabContent%%</a></li>
+    </ul>
+    <div class="clear"></div>
+    <div id="SearchProduct_Container" style="%%GLOBAL_ProductContainerDisplay%%">
+        <button class="js-faceted-search-action Filterbtn btn" style="display:none;"><span>%%LNG_FilterBy%%</span></button>
+        <div class="Left js-faceted-search-column">
+            %%Panel.FacetedSearch%%
+        </div>
+        <div class="Content ContentArea %%GLOBAL_ExtraCategoryClass%%" id="LayoutColumn1">
+            %%Panel.SearchTabProducts%%
+        </div>
+    </div>
+    <div id="SearchContent_Container" style="%%GLOBAL_ContentContainerDisplay%%">
+        %%Panel.SearchTabContents%%
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript">//<![CDATA[
+$(document).ready(
+    function()
+    {
+        showSearchTabs("%%GLOBAL_SelectedSearchTab%%");
+    }
+);
+//]]></script>
+
+<script>
+    jQuery(document).ready(function(){
+    <!-- Product List related script for Faceted Search Please don't delete it... -->
+    jQuery(".Left ul.cycle-slideshow, .Right ul.cycle-slideshow").removeClass("ProductList").addClass("ProductList1");
+    });
+</script>

@@ -1,0 +1,32 @@
+<div class="Left fleft" id="LayoutColumn1">
+    %%Panel.SideShopByBrand%%
+    %%Panel.SideBrandTagCloud%%
+</div>
+<div class="Content Wide %%GLOBAL_ExtraCategoryClass%%" id="LayoutColumn2">
+    <h1 class="TitleHeading">%%GLOBAL_TrailBrandName%%</h1>
+    <div class="product-nav">
+        %%SNIPPET_BrandPaging%%
+        %%SNIPPET_CategorySortBox%%
+        
+        <div class="clear"></div>
+    </div>
+    <div class="BlockContent">                
+        <script type="text/javascript">
+            lang.CompareSelectMessage = '%%LNG_CompareSelectMessage%%';
+        </script>
+        
+        <form name="frmCompare" id="frmCompare" action="%%GLOBAL_CompareLink%%" method="get" onsubmit="return compareProducts('%%GLOBAL_CompareLink%%')">
+            %%Panel.BrandProductListing%%
+            
+            <div class="product-nav btm">
+                <div class="PagingBottom">
+                    %%SNIPPET_BrandPaging%%
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- <div class="CompareButton" style="display:%%GLOBAL_HideCompareItems%%">
+            <input value="%%LNG_CompareSelected%%"  type="submit" class="btn alt" />
+        </div> -->
+        </form>
+    </div>
+</div>

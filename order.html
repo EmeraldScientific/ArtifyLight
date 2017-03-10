@@ -1,0 +1,70 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+%%Panel.HTMLHead%%
+<script type="text/javascript" src="%%GLOBAL_CdnAppPath%%/javascript/jquery/plugins/jCarousel/jCarousel.js?%%GLOBAL_JSCacheToken%%"></script>
+<body>
+    <div class="page">
+        %%Panel.Header%%
+        <div class="main">
+            <div class="inner">
+                %%Panel.WrapperBanner%%
+                <h1 class="TitleHeading mt20">%%LNG_ThanksForYourOrder%%%%GLOBAL_CustomerName%%</h1>
+                <div class="Content Widest" id="LayoutColumn1">
+                    <div class="Block PageContent">
+                        <div class="BlockContent full-width">
+                            <p class="ErrorMessage" style="display:%%GLOBAL_HideError%%">
+                                %%GLOBAL_ErrorMessage%%
+                            </p>
+                            
+                            <div style="display:%%GLOBAL_HidePaidOrderConfirmation%%">
+                                
+                                <div class="NotifyMessage">
+                                    <p><span>%%LNG_YourOrderNumber%%</span> <a href="%%GLOBAL_ShopPath%%/account.php?action=view_order&order_id=%%GLOBAL_OrderId%%">%%GLOBAL_OrderId%%</a></p>
+                                    
+                                    <p style="display:%%GLOBAL_HidePhysicalOrderConfirmation%%">
+                                        %%GLOBAL_PhysicalOrderConfirmation%%
+                                    </p>
+                                    
+                                    <p style="display:%%GLOBAL_HideDigitalOrderConfirmation%%">
+                                        %%GLOBAL_DigitalOrderConfirmation%%
+                                    </p>
+                                    <p style="display:%%GLOBAL_HideDigitalOrderDownloadLink%%">
+                                        <br />
+                                        <a href="%%GLOBAL_ShopPath%%/orderstatus.php">%%LNG_DownloadTheItemsYouOrdered%%</a>
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div style="display: %%GLOBAL_HideAwaitingPayment%%">
+                                <p class="SuccessMessage" style="display:%%GLOBAL_HideSuccess%%">
+                                    %%LNG_JustSentAnEmailConfirmation%%
+                                </p>
+                                %%LNG_OrderAwaitingPayment%%
+                            </div> 
+                            %%GLOBAL_OrderConfirmationDetails%%
+                            %%SNIPPET_OfflinePaymentMessage%%
+                            
+                            
+                        </div>
+                        <div class="full-width">
+                            %%Panel.ShareProductById%%
+                            <div style="clear:both;">
+                                <p><a href="%%GLOBAL_ShopPath%%" class="btn alt">%%GLOBAL_ContinueShoppingOnStoreName%%</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    %%Panel.SimilarMultiProductsByCustomerViews%%
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        %%Panel.Footer%%
+        <!-- Include the conversion tracking code for all analytics packages -->
+        %%GLOBAL_ConversionCode%%
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* na */
+
+/* =============================================================
+Theme Specific Styling
+============================================================= */
+/* Header */
+#Header {padding:30px 0;}
+#Logo {padding:0;}
+#Logo img {display:inline;}
+.CartLink:hover .icon {background:#999; border-color:#999;}
+
+/* Header Search */
+.QuickSearch tr {margin-top:1px;}
+.QuickSearch tr:first-child {margin-top:0;}
+.QuickSearchAllResults {background:#eee;}
+.QuickSearchAllResults:hover, .QuickSearchAllResults:hover a, .QuickSearchAllResults a:hover {background: none repeat scroll 0 0 #000 !important; color: #fff !important; display:block;}
+
+/* .QuickSearch:before, .CurrencyChooser:before {width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 5px solid #2f2f2f; font-size: 0; line-height: 0;} */
+
+
+/* Home Page Slider */
+.slide-show li.slide {max-height:345px; overflow:hidden;}
+.slide-show li.slide {width:100%;}
+.flexslider .slides img {width:auto !important; max-width:100%; margin:0 auto;}
+
+/* Left Side Treeview Menu */
+.treeview li li a:hover, .treeview li li li a:hover, .treeview li li li li a:hover {color:#000 !important; background:#fff;}
+.Left .treeview li li li a {padding-left:32px !important;}
+.Left .treeview li li li li a {padding-left:40px !important;}
+.afterSideShopByBrand a {background:#eee;}
+
+/* Common Product List Item */
+.ProductList .ProductImage a {display:table-cell; vertical-align:middle;}
+.ProductList.List li .QuickViewBtn {width:86px; left:50% !important; margin-left:-43px !important; text-align:center !important;}
+
+.ProductList .ProductImage img{
+    -webkit-transition:all 400ms linear; 
+    -moz-transition:all 400ms linear; 
+    -o-transition:all 400ms linear; 
+    -ms-transition:all 400ms linear;
+    transition: all 400ms linear 0s;
+}
+.ProductList .ProductImage img:hover {
+    transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transition:all 400ms linear; 
+    -moz-transition:all 400ms linear; 
+    -o-transition:all 400ms linear; 
+    -ms-transition:all 400ms linear;
+    transition: all 400ms linear 0s;
+}
+
+/* Product Details */
+.DetailRow.d-date div.selector {margin-bottom:5px;}
+.btn.addToCartButton.icon-Out.of.stock.at.present {background:#999; cursor:text;}
+
+/* Cart Coupo Code */
+#CartStatusMessage {margin-bottom:20px;}
+.CartCode input[type="text"] {min-width:200px;}
+.CartItemQuantity div.selector span {text-align:left;}
+.CartCode .GiftCertificate input.btn, .CartCode .CouponCode input.btn {padding:5px 10px 4px;}
+
+/* Common Uniform Select Box */
+div.selector:after {z-index:1;}
+div.selector select {z-index:2;}
+
+/* Search Result Grid View */
+.SearchContainer .ProductList {margin:0 0 20px -20px;}
+#price_to, #price_from {min-width: 80px;}
+#SearchContent_Container .product-nav {display:none;}
+
+.brand-img { min-height:100%; } 
+
+/* Create Account Form */
+#CreateAccountForm .form input.Textbox {width:100%; max-width:400px;}
+#CreateAccountForm .box > dl, #CreateAccountForm p.Submit {margin-left: 247px !important;}
+
+/* Multiple Checkout */
+#multiAddressForm p.Submit {margin-top:20px;}
+
+/* Blog Page */
+.NewsDate {border-top:1px solid #ddd; padding-top:15px;}
+.BlogPage .PageContent h1 {border-bottom:none; margin-bottom:0;}
+
+/* RSS Feed */
+.list-icon.feed .icon {width:20px; height:20px; margin-right:5px;}
+
+#WishLists .icon-plus:before {margin:8px 0 0 10px;}
+
+
+

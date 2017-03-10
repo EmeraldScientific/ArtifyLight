@@ -1,0 +1,717 @@
+/* Common Classes */
+em {font-style:normal;}
+img { max-width:100%; width:auto !important; height:auto !important;}
+.zoomWrapperImage img{ max-width:500%; }
+.desktopView { display:block; }
+table.CartContents tbody tr.desktopView { display:table-row; }
+.mobileView { display:none; }
+
+/* General Input Elements */
+input.Textbox, input[type="text"], input[type="password"], input[type="email"], input[type="submit"], input[type="button"], input.btn, textarea {-webkit-appearance:none; box-shadow:none; border-radius:0;}
+.CheckoutOrderComments { clear:both; }
+
+.cartontop { margin: 6px 0 0; font-size: 13px; display: none; }
+.cartontop .icon { font-size: 17px; background:none; margin-right:5px; }
+.currencyconvert { display: none !important; }
+
+/* ===================================================================
+Desktop View - 1024 and above
+=================================================================== */
+/* ====== Header Long Logo Starts ======== */
+@media screen and (max-width: 1300px)
+{
+.productOptionPreviewDisplay {margin-left: -155px !important;}
+}
+
+/* ====== Header Long Logo Starts ======== */
+@media screen and (max-width: 1023px)
+{
+    #SearchTabProducts .ErrorMessage, #SearchTabProducts .InfoMessage { margin-left:0px; }
+    #NewBillingAddress .AddBillingAddress > div.FloatLeft { width:100%; }
+
+/* Faceted Search Related Changes - 1023 and below */
+.Left.fleft.js-faceted-search-column, .js-faceted-search-action.Filterbtn.btn {display:block !important; width:100%;}
+.js-faceted-search-action.Filterbtn.btn {margin-bottom:20px;}
+.Left.fleft.js-faceted-search-column {display:none !important;}
+.Left.fleft.js-faceted-search-column.mobile-in-view {display:block !important;}
+.faceted-search .Content {clear:both;}
+
+}
+/* ====== Header Long Logo Ends ======== */
+/* ====== Media Query for Product Details Page Video Starts ======== */
+@media screen and (min-width: 768px)
+{
+    #FeaturedVideo embed {width:640px; height:480px;  }
+    #FeaturedVideo, #VideoSingle { text-align:center; }
+    #VideoList { width:640px; margin:0 auto; }
+    #VideoList li { float:left; width:45%; list-style-type:none; } 
+}
+
+@media screen and (min-width: 240px) and (max-width: 767px)
+{
+    #FeaturedVideo embed {width:100%; height:240px;  }
+    #FeaturedVideo, #VideoSingle { text-align:center; }
+    #VideoList { width:100%; margin:0 auto; }
+    #VideoList li { float:left; width:100%; list-style-type:none; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; } 
+
+    #Header .SocialConnect { display: none !important; }
+    .header-right { clear: both; float: right; width: 90%; }
+    .headright-midd { margin-top: 0; position: relative; right: auto; top: auto; }
+
+    .currencyconvert { display: block !important; }
+    .currency-converter { display: none; }
+    .cartontop { display: block; }
+    .currencyconvert p { margin-bottom: 0; }
+
+    .icon-shopping-cart:before { margin-left: 0; }
+
+    .footersocial { display: block; float: left; }
+    .footer-links p { padding: 10px 0; }
+
+    .newsletter-subscription ul li { width: 46%; }
+    /* .SubCategoryListGrid { display: none; } */
+
+}
+
+/* ====== Media Query for Product Details Page Video Ends ======== */
+
+@media screen and (max-width: 1280px)
+{
+    .slide-show .slide-overlay { left: 5%; top: 15%; }
+}
+
+@media screen and (max-width: 1180px)
+{
+    .flexslider img {max-width:100%; width:auto !important; height:auto !important;}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1179px)
+{ 
+/* General Widths - 1024 */
+    .TopMenu > .inner, #Header > .inner, .PageMenu > .inner, .main > .inner, .footer-main > .inner, .footer-links > .inner, .newsletter-subscription > .inner, .headright .inner { width:990px;}
+    .AddBillingAddress dd, .AddShippingAddress dd { width:200px; } 
+
+/* Home Page Slider - 1024 and above */
+
+/*.slide-show .slide-overlay {width:auto; max-width:100%; top:50px; left:50px;}*/
+
+/* Home Page Latest and Featured Styling - 1024 and below */
+    .NewProducts h2, .FeaturedProducts h2, .PopularProducts h2 {background-position:130px 0;}
+
+/* Common Product Li - 1024 */
+    .ProductList li, .ProductList li .mosaic-block {width:338px;}
+    .ProductList li .mosaic-block .ProductActionAdd .btn { }
+
+    #home .ProductList li, .productPage .ProductList li, #home .ProductList li .mosaic-block, .productPage .ProductList li .mosaic-block {width:219px;}
+
+.productPage .ProductList li, .productPage .ProductList li .mosaic-block {width:232px;}
+    .compare button, .addtowishlist button, .quickview button {width:30px;}
+    #home .mosaic-block .ProductActionAdd .btn, .productPage .ProductList li .mosaic-block .ProductActionAdd .btn {width:168px; font-size:11px; padding:0 5px 0 25px;}
+    #home .mosaic-block .ProductActionAdd .btn {width:136px;}
+
+/* Home Page Static Top Banner - 1024 */
+    .Block.banner_home_page_top .homeads a {float:left; width:50%; display:block; padding-left:20px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+    .Block.banner_home_page_top .homeads {margin-left:-20px;}
+    .Block.banner_home_page_top .homeads img {padding:0 !important; margin:0 auto !important;}
+    .ExpressCheckoutContent .a .pass { clear:both; }
+
+/* Sub Categories Grid View */
+    .SubCategoryListGrid li {width:335px !important;}
+
+}
+
+@media screen and (max-width: 1024px) { 
+/* Home Page Slider - 1024 and below */
+
+/*.slide-show .slide-overlay {width:auto; max-width:100%; top:50px; left:50px;} */
+.slide-show .slide-overlay { padding: 15px 15px; }
+.slide-show h2 { font-size: 30px; }
+.slide-show .slide-text { font-size: 14px; }
+.slide-show .btn { padding: 5px 18px 6px;}
+
+/* Home Page Latest and Featured Styling - 1024 and below */
+.NewProducts h2, .FeaturedProducts h2 {background-position:130px 0;}
+
+/* Home Page Static Top Banner - 1024 */
+.Block.banner_home_page_top .homeads a {float:left; width:50%; display:block; padding-left:20px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.Block.banner_home_page_top .homeads {margin-left:-20px;}
+.Block.banner_home_page_top .homeads img {padding:0 !important; margin:0 auto !important;}
+
+/* Fast Cart Popup - 1024 and below  */
+#fastCartContainer .ProductList li .mosaic-block .ProductActionAdd .btn {width:138px;}
+.ExpressCheckoutContent .a .pass { clear:both; }
+/* Compare Table */
+div#CompareContent {overflow-x:auto;}
+
+/* Account Recent Items - 1024 */
+#AccountRecentItems .ProductList li, #AccountRecentItems .ProductList li .mosaic-block {width:298px;}
+#AccountRecentItems .ProductList li .compare, #AccountRecentItems .ProductList li .addtowishlist {width:49.3%;}
+
+/* Brands Page - 1024 */
+.SubBrandListGrid li {width:156px !important;}
+
+/* Search Result Page - 1024 */
+/* .SearchContainer .ProductList {margin-left:0;} 
+#SearchTabsList.TabNav, #SearchPageHeader, #SearchTabContent {margin-left:20px;} */
+.SearchContainer .ProductList li, .SearchContainer .ProductList li .mosaic-block { }
+.SearchContainer .ProductList li .mosaic-block .ProductActionAdd .btn { }
+.SearchContainer .ProductList li .mosaic-block .ProductActionAdd { padding: 0; }
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) 
+{
+/* General Widths - 768 */
+.TopMenu > .inner, #Header > .inner, .PageMenu > .inner, .main > .inner, .footer-main > .inner, .footer-links > .inner, .newsletter-subscription > .inner, .headright .inner {width:748px;}
+.AddBillingAddress .HorizontalFormContainer dt{width:22% !important;}
+.AddBillingAddress .HorizontalFormContainer dd{width:28% !important;}
+.AddBillingAddress .HorizontalFormContainer dt, .AddBillingAddress .HorizontalFormContainer dd {padding:0 !important;}
+
+/* Header Search - 768 */
+.headright {margin:0 auto; position:relative;}
+#Logo {padding:0; margin:0 auto !important;}
+#Header .SocialConnect {margin-top:0; width:100%;}
+#Header .SocialConnect ul {float:right; text-align:right;}
+.header-right {float:right; width:100%;}
+.header-right #SearchForm {float:left; clear:none;}
+.QuickSearch {margin-left:0;}
+
+#Header {padding:10px 0;}
+
+/* Manin Navigation - 768 */
+.icon-reorder:before {position:absolute; top:0; left:0; font-size:28px;}
+.PageMenu {padding-bottom:8px; border-bottom:none;}
+.PageMenu li, .homeicon {margin-right:20px;}
+
+/* Home Page Slider - 768 and below */
+.slide-show .slide-overlay { top:30px; padding: 10px; max-width:350px;}
+.slide-show h2 { font-size: 24px;}
+.slide-show .slide-text { font-size: 16px; margin-bottom: 20px; }
+.slide-show .btn { padding: 5px 15px 6px; font-size: 15px; }
+
+/* Home Page NewsLetter Box - 768 */
+.newsletter-subscription h4 {font-size:19px;}
+
+/* Footer Area - 768 */
+.footer-columns.grid .one-quarter {width:23%;}
+.footer-columns.grid .one-quarter.last {width:31%;}
+
+/* Common Product Li - 768 */
+#home .ProductList li, .ProductList li .mosaic-block, .productPage .ProductList li, .ProductList li .mosaic-block, .ProductList li, #SimilarMultiProductsByCustomerViews .ProductList li {width:364px;}
+#home .ProductList li .mosaic-block .ProductActionAdd .btn, .ProductList li .mosaic-block .ProductActionAdd .btn  { }
+.productPage .ProductList li .mosaic-block .ProductActionAdd .btn {width:294px;}
+
+
+/* Categor Page Setting - 768 */
+.CategoryContent, #LayoutColumn2 {padding-left:0;}
+
+
+/* Fast Cart Popup - 768 */
+#fastCartContainer .ProductList li, #fastCartContainer .ProductList li:first-child {margin:0 0.75% 10px; width:48.5% !important;}
+#fastCartContainer .ProductList li .mosaic-block .ProductActionAdd .btn {width:266px;}
+
+/* Product Details Page - 768 */
+.left-content {width:52%;}
+
+/* General Form Elements - 768 */
+.FormContainer .box dt {width:150px;}
+.HorizontalFormContainer dt {text-align:left;}
+.HorizontalFormContainer p.Submit {margin-left:0;}
+
+/* SignIn Page - 768 */
+.AccountLogin .vertical-form .actions {margin-left:100px;}
+.AccountLogin .vertical-form label {width:100px;}
+
+/* Express Checkout Page - 768 */
+.ExpressCheckoutCompletedContent {position:relative; left:0;}
+.ExpressCheckoutBlockCompleted .ExpressCheckoutCompletedContent {padding:25px 12px; margin-left:12px;}
+#tabcontent {overflow:hidden;}
+
+/* General Styling - 768 and below */ 
+.mobileView, .desktopView.shoppingCartLink {display:block;} 
+.Left, .Right, .mobileView.shoppingCartLink, .desktopView, .mobileView.topMenuIcon, table.CartContents tbody tr.mobileView {display:none;}
+
+
+/* Logo - 768 and below */
+#Logo {width:100%; text-align:center; margin:0 auto !important;}
+
+/* Header Search - 768 and below */
+.PageMenu li .icon {display:block !important;}
+
+/* Main Menu Mobile View - 768 and below */
+#sidr-left h3, #sidr-left h2 {}
+#sidr-left #Menu, #sidr-left .Block {margin-bottom:20px;}
+.mobileView .homeicon {display:none;}
+.treeview li a, .SideNav li a {overflow:hidden;}
+.mobileView.mobileMenu {border:1px solid #d6d6d6; margin-bottom:10px; overflow:hidden;}
+.mobileView li, .mobileView li li, .mobileView li li li {display:block; width:100%; clear:both; float:left; position:relative; border:none; margin-right:auto;}
+.PageMenu .mobileView li ul {position:relative; background:#f2f2f2;}
+.PageMenu .mobileView li a.hasSub {background:none;}
+.treeview li li li a {padding-left:36px;}
+.treeview li li li li a {padding-left:48px;}
+
+.mobileMenuIcon { display:block !important; width:32px; height:32px; margin-top:10px; overflow:hidden; }
+
+#QuickViewProductDetails .addToCart {clear:both; float:left; margin-top:10px;}
+
+.ExpressCheckoutContent .a .address-checkout { width:100% !important; }
+.two-thirds { padding-left:10px; }
+#Header .inner { position:relative; }
+.PopularProducts h2 {background-position:130px 0;}
+
+
+/* Brands Page - 768 */
+.SubBrandListGrid li {width:168px !important;}
+
+/* Search Result Page - 768 */
+#SearchTabsList.TabNav, #SearchPageHeader, #SearchTabContent {margin-left:0;}
+.SearchContainer .ProductList {margin-left:-20px;}
+.SearchContainer .ProductList li, .SearchContainer .ProductList li .mosaic-block { }
+.SearchContainer .ProductList li .mosaic-block .ProductActionAdd .btn { }
+
+/* Sub Categories Grid View - 768 */
+.SubCategoryListGrid li {width:360px !important;}
+
+#Header .SocialConnect ul { margin-top: 0 !important; }
+.SocialConnect li {width:24px; margin-left:10px;}
+.icon-social {font-size:20px;}
+.mobileMenuIcon { margin-top: -45px !important; }
+
+#CreateAccountForm .box > dl, #CreateAccountForm p.Submit {margin-left:165px !important;}
+#CreateAccountForm .form dd {float:none;}
+
+.faceted-search .ProductList, .faceted-search .ProductList.List {margin-left:-20px !important;}
+
+.fastCartItemBox {max-width:195px;}
+
+}
+
+/* ===================================================================
+Tablet View - 768 and below
+=================================================================== */
+@media screen and (max-width: 768px) 
+{ 
+
+/* General Styling - 767 and below */ 
+
+.mobileView, .desktopView.shoppingCartLink { display:block; } 
+.Left, .Right, .mobileView.shoppingCartLink, .desktopView, .mobileView.topMenuIcon, table.CartContents tbody tr.mobileView, .PageMenu { display:none; }
+#AdvancedSearchForm div.selector {float:none; overflow:hidden;}
+.SortBox div.selector {width:auto;}
+
+.AddBillingAddress .HorizontalFormContainer dt, .AddBillingAddress .HorizontalFormContainer dd {padding:0 !important;}
+
+
+/* Logo - 767 and below */
+#Header {padding:10px 0;}
+#home .main {margin-top:0;}
+#Logo { padding:10px 0; width:100%; text-align:center; margin:0 auto !important;}
+
+/* Header Search - 767 and below */
+.PageMenu li .icon {display:block !important;}
+
+/* Main Menu Mobile View - 767 and below */
+.mobileMenuIcon {margin-top:2px !important;}
+#sidr-left #Menu, #sidr-left .Block {margin-bottom:20px;}
+.mobileView .homeicon {display:none;}
+.treeview li a, .SideNav li a {overflow:hidden;}
+.icon-rss-sign:before {color:#fff; font-size:18px;}
+.Content .icon-rss-sign:before {color:#cc4125;}
+.SideNav li a {display:inline;}
+.mobileView.mobileMenu {border:1px solid #d6d6d6; margin-bottom:10px; overflow:hidden;}
+.mobileView li, .mobileView li li, .mobileView li li li {display:block; width:100%; clear:both; float:left; position:relative; border:none; margin-right:auto;}
+.PageMenu .mobileView li ul {position:relative; background:#f2f2f2;}
+.PageMenu .mobileView li a.hasSub {background:none;}
+.treeview li li li a {padding-left:36px;}
+.treeview li li li li a {padding-left:48px;}
+
+.mobileMenuIcon { display:block !important; width:32px; height:32px; margin-top:10px; overflow:hidden; font-size: 28px; }
+
+.d-date div {clear:both;}
+#uniform-EventDateMonth, #uniform-EventDateDay, #uniform-EventDateYear {clear:none; margin-right:5px;}
+
+/* Sitemap Page - 768 */
+#SitemapContent li {padding:5px;}
+
+/* Order Confirm Cart - 768 and below */
+#CartContent .CartContents thead {display:none;}
+  
+  
+#sidr-left ul.ProductList li { width:240px; margin-bottom: 12px; margin-top:0; }
+#sidr-left ul.ProductList li .mosaic-block { width:238px; }
+#sidr-left ul.ProductList li .mosaic-block a { padding:0px 0px; }     
+#sidr-left .ProductList li .mosaic-block .ProductActionAdd .btn { width:133px; }
+.PopularProducts h2{ background-position:130px 0; }
+div.selector, #uniform-sel_billing_address {  }
+#SideNewsletterBox form#subscribe_form { margin-left:-10px; }
+#ProductDetails h1 { font-size:26px; }
+.form dd { float:left; }
+.CartContents tfoot .SubTotal td { float:none; width:auto; }
+
+/* Account Recent Items - 768 */
+#AccountRecentItems .ProductList li, #AccountRecentItems .ProductList li .mosaic-block {width:343px;}
+#AccountRecentItems .ProductList li .compare, #AccountRecentItems .ProductList li .addtowishlist {width:49.4%;}
+
+/* Search Page */
+#SearchTabsList.TabNav, #SearchPageHeader, #SearchTabContent, #SearchTabProducts {margin-left:0;}
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px)  
+{
+/* General Widths - 480 and below */
+.TopMenu > .inner, #Header > .inner, .PageMenu > .inner, .main > .inner, .footer-main > .inner, .footer-links > .inner, .newsletter-subscription > .inner, .headright .inner {width:460px;}    
+    
+    
+    
+    
+}
+
+/* ===================================================================
+Mobile Landscape View
+=================================================================== */
+@media screen and (max-width: 480px) 
+{ 
+    
+  .mobileView .ProductDetails strong, .mobileView .ProductDetails strong a, .mobileView .ProductDetails .CartItemPrice, .mobileView .ProductDetails .CartQuantity { display:block; text-align:center; }  
+#payment_options .PTB20 strong { display:block; clear:both; }
+
+.ProductList li {width:48%; margin:1%;}
+    
+}
+
+/* ============= Common Styling for Other Extra Width Devices================ */
+
+@media screen and (min-width: 480px) and (max-width: 767px)  
+{
+/* Header Search - 767 and below */
+#SearchForm { width:auto; }
+#SearchForm  input[type="text"] {width:92% !important;}  
+
+
+/* Grid - 767 to 480 */
+.one-quarter, .two-eighths, .three-twelfths {width:50%;}
+
+/* Checkout Thankyou Page - 480 */
+#tabcontent .photo {margin-right: 20px; width: 100px;}  
+#share-product ul.tabs li {padding: 6px 6px 6px 0;}
+
+/* Header Search Popup - 767 to 480 */
+table#QuickSearch { width:100% !important; margin-left:0px; }
+.QuickSearch tbody tr, .QuickSearch tbody{width:100% !important;}
+.mobileView .ProductDetails strong, .mobileView .ProductDetails strong a, .mobileView .ProductDetails .CartItemPrice, .mobileView .ProductDetails .CartQuantity { display:block; text-align:center; }
+
+.ProductList, .SearchContainer .ProductList {margin-left:-2% !important;}
+.faceted-search .ProductList, .faceted-search .ProductList.List {margin-left:0 !important;}
+
+#home .ProductList li, .productPage .ProductList li, .ProductList li, #fastCartContainer .ProductList li { width:48% !important; margin:1% 0 1% 2%; }
+#fastCartContainer .ProductList li:first-child {margin-left:1%;}
+
+#sidr-left .ProductList li { margin: 0 0 10px !important; width: 100% !important; }
+
+#multiAddressForm div.selector {width:410px !important;}
+
+.SubBrandListGrid li {width:45% !important;}
+
+/* Sub Category Grid View - 480 */
+.SubCategoryListGrid ul {margin-left:-4% !important;}
+.SubCategoryListGrid li {margin:1% 0 2% 4% !important; max-width:46% !important;}
+   
+}
+
+/* ===================================================================
+Mobile Portrate View
+=================================================================== */
+
+@media screen and (min-width: 240px) and (max-width: 479px)  
+{
+/* General Widths - 320 and below */
+.TopMenu > .inner, #Header > .inner, .PageMenu > .inner, .main > .inner, .footer-main > .inner, .footer-links > .inner, .newsletter-subscription > .inner, .headright .inner {width:300px;}    
+
+/* Typography - 479 and below */
+.TitleHeading, h1 {font-size:20px;}
+
+.FeaturedProducts h2, .NewProducts h2, .PopularProducts h2, #SimilarMultiProductsByCustomerViews h2, #SimilarProductsByCustomerViews h2, h2 { font-size:18px; }
+h3 { font-size:16px; }
+h4, h5 { font-size:14px; }
+h6 { font-size:13px; }
+
+.flexslider img {max-width:150%; }
+
+.addto .BulkDiscount {width:100%; margin:0 auto !important; clear:both;}
+#ProductDetails .addto .BulkDiscount {width:auto; margin:0 10px auto 0 !important; clear:none;}
+
+/* Header Search - 479 and below */
+.smallmob {display:block !important;}
+.searchtoggle, .searchtoggle:hover {color: #FFF; float: right; font-size: 15px; padding:6px 10px;}
+.Active.icon-search:before {content:"\f068"; color:#fff; font-size: 15px;}
+
+#SearchForm { width:100%; }
+.header-right { width:86%; }
+#SearchForm  input[type="text"] {width:87% !important;}
+    
+/* Newsletter box - 479 and below */    
+.footer .newsletter-subscription li, .footer .newsletter-subscription li.inputForm, .footer .newsletter-subscription li input[type="text"] {width:96%;}
+
+/* Grid - 479 and below */
+.one-quarter, .two-eighths, .three-twelfths {width:100%; margin-bottom:20px;}
+
+/* Footer - 479 and below */
+.footer-main .Block {margin-bottom:0;}
+.footer-main .inner {padding:20px 0 0;}
+.footer-main, .footer-main a {display:block;}
+
+/* Checkout Thankyou Page - 479 and below */
+#tabcontent .photo {width:100%; clear:both;}
+#share-product ul.tabs li {padding: 6px 0;}
+
+/* Header Search Popup - 320 */
+table#QuickSearch {width:256px !important; margin-left:0; }
+.QuickSearch tbody tr {padding:10px;}
+
+/* Common Product Li List View - 479 and below */
+.ProductList, .SearchContainer .ProductList {margin-left:auto;}
+#home .ProductList li, .productPage .ProductList li, .ProductList li, #fastCartContainer .ProductList li {margin-left:auto; width:100% !important; margin-right:auto; margin-bottom:10px;}
+
+.ProductList.List .productsbox {width:100%;}
+.SeeMorePicturesLink {display:none;}
+
+/* Wishlist Page - 479 and below */
+#wishlistsform input.btn {margin-bottom:5px;}
+.SharePublicWishList > strong {word-wrap:break-word;}
+ 
+    
+.SortBox div.selector span, .SearchSorting div.selector span { margin-right:0; }
+.SearchSorting div.selector { width:110px; line-height:28px; min-height:28px; }
+.SortBox label, .SearchSorting label { padding:10px 5px 0 0; }
+#subscribe_form > ul { margin-left:10px; }
+.nav-prev, .nav-next { width:20px; }
+.CategoryPagination .PagingList a { padding:7px 9px; }
+.footer-columns h4 { margin-bottom:10px; }
+.ProductList .ProductImage img, #ProductDetails .ProductThumbImage img { /*height:100% !important;*/ }
+.ProductList .ProductImage, .brand-img, #ProductDetails .ProductThumbImage { /*height:350px;*/ }
+.zoomPad { height:350px; }
+.ReviewContaint p { margin-bottom:5px; display:block; clear:both; }
+#CartContent .KeepShopping { float:right;  }
+#CartContent .ProceedToCheckout { padding-top:5px; }
+.ProceedToCheckout .AlternativeCheckout p { padding:0; }
+.ProductDetails .productAttributes { margin:8px 0px; }
+  
+#apply_code.btn.alt {
+    margin-top: 5px;
+} 
+
+.ExpressCheckoutBlock .ExpressCheckoutTitle { padding:20px 100px 20px 20px; } 
+.AccountOrderStatusList li h4 { margin-top:45px; }
+.FormContainer dd .LittleNotePassword  { padding:2px 0 2px 70px; }
+.EstimateShippingButtons > span {float:left; margin-top:10px;}
+
+/* Account Recent Item - 479 and below */
+#AccountRecentItems .ProductList li, #AccountRecentItems .ProductList li .mosaic-block {width:100%;}
+#AccountRecentItems .ProductList li .compare, #AccountRecentItems .ProductList li .addtowishlist {width:49.2%;}
+
+/* Blog Page - 479 and below */
+#WishLists, #WishListEditFrom, #AccountInbox, #AccountOrderStatus, #AccountOrders, #ChooseShippingAddress, #EditAccountForm, #AccountRecentItems, #ShippingAddressForm, #AccountOrder, #CompareContent, #ChooseBillingAddress, #PurchaseGiftCertificate, #GiftCertificateIntro, #CheckGiftCertificateBalance, .YourAccount, .PageContent, #ChooseShippingProvider, #ConfirmOrder {padding:0px !important;}
+
+#multiAddressForm div.selector {width:275px !important;}
+
+.SubBrandListGrid li {width:92% !important;}
+
+/* Sub Category Grid View - 320 */
+.SubCategoryListGrid ul {margin-left:auto !important;}
+.SubCategoryListGrid li {max-width:100% !important; margin:0 auto 20px !important;}
+
+
+
+}
+
+
+
+@media screen and (min-width: 240px) and (max-width: 767px)  
+{
+
+/* Form Elements - 767 and below */
+.btn {font-size:14px;}
+.HorizontalFormContainer dt, .HorizontalFormContainer dd { padding-bottom: 0; }
+.HorizontalFormContainer p.Submit, .form input.Textbox, .vertical-form label, input.Textbox, textarea, input[type="text"], input[type="password"], .vertical-form fieldset, .vertical-form .actions, .HorizontalFormContainer dt, .HorizontalFormContainer dd {width:100% !important; margin-left:auto; margin-right:auto; clear:both; text-align:left; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; /* padding-bottom:0; */} 
+#uniform-sel_billing_address, #sel_billing_address {width:99% !important;}
+.NarrowFormContainer dd, .ExpressCheckoutContent .HorizontalFormContainer p.Submit {margin-left:0; padding-bottom:0;}
+#recaptcha_area {width:100%; overflow-x:auto;}
+
+div.selector, #uniform-sel_billing_address {float:left; width:99%;}
+
+.AdvancedSearch h3 { margin: 15px 0 5px; }
+
+.CartList .ProductDetails strong a { font-size:14px; color: #000; }
+.CartList .ProductDetails .CartItemPrice { font-size:14px; color: #444; }
+.CartList .ProductDetails { text-align:center; }
+
+.CartLink .icon {width:32px; height:32px; padding:0;}
+    
+#use_store_credit table { width:100%; }
+
+.PageMenu {padding-bottom:0; border:none;}
+.mobileView.shoppingCartLink {display:block; margin-top:10px;}
+.mobileView.topMenuIcon {display:block;}
+.desktopView.shoppingCartLink, table.CartContents tbody tr.desktopView, table.CartContents tbody tr.desktopView {display:none;}
+table.CartContents tbody tr.mobileView {display:table-row;}
+    
+/* Top Menu - 767 and bleow */
+
+.currency-converter > a {padding:0 !important;}
+.currency-converter.Show {border-top: 1px solid #ddd; bottom: 0; display: block; padding: 10px 0 !important; position: absolute; top: auto; width: 100%;}
+.CurrencyList a .Flag {margin-top:5px;}
+.TopMenu > .inner.currency {padding-bottom: 30px; position: relative;}
+
+.TopMenu .FloatRight {width:100%;}
+.TopMenu .FloatRight.topMenuIcon  { width:auto; color:#fff; background:#000; margin:4px 0; text-transform:uppercase; display:block; padding:3px 10px;}
+.TopMenu .menucover {display:none;}
+.TopMenu ul {margin: -10px auto 4px; padding: 0; text-align: left;}
+.TopMenu li {display:block; float:left; width:100%; clear:both; border:none; padding:5px 10px 5px 0; margin:0 auto; border-top:1px solid #ddd; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.TopMenu li:first-child {border-top:none;}
+.TopMenu li a {display:block; padding:5px 0; }
+.TopMenu li a:first-child {border-top:none;}
+
+/* Header Search - 767 and below */
+.headright { width:100%; clear:both; margin:0 auto; }
+.headright .FloatRight { float:none; margin:0 auto; }
+
+#SearchForm { border: none; float: none; position:relative; margin-bottom:10px;}
+#SearchForm  input[type="text"] { box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+.SortBox { clear:both; }
+#SearchPageHeader > p.txt24 {clear:both; padding-top:10px;}
+
+/* Home Page Slider - 767 and below */
+.slide-show {margin-bottom:0 !important;}
+.slide-show .slide-overlay { position:absolute; top:auto; bottom:0px; left:0px; padding:4px 0px; width: 100%; max-width:none; background: rgba(0,0,0,0.75); }    
+.slide-show h2 { font-size:16px; margin: 0; }
+.slide-show h2 span {padding:0 10px;}
+.slide-show .slide-text, .slide-show .btn {display:none;}
+.flex-control-nav, .flex-direction-nav {display:none;}
+
+.cycle-pager {margin:5px auto 0;}
+.cycle-pager span { width:8px; height:8px; margin: 0 3px;}
+
+/* Home Ads - 767 and below */
+.Block.banner_home_page_top .homeads {margin:0 auto;}
+.Block.banner_home_page_top .homeads a {padding:0; margin-top:20px; width:100%; clear:both; display:block; overflow:hidden;}
+.Block.banner_home_page_top .homeads a:first-child {margin-top:0;}
+
+/* Newsletter box - 767 and below */
+#SideNewsletterBox .grid .one-third, #SideNewsletterBox .grid .two-thirds {width:100%;}
+.subscribe_form ul {text-align:left; margin-left:10px;}
+.footer .newsletter-subscription li input {margin-top:10px;}
+
+/* Common Product Li - 767 and below */
+.mosaic-block {width:100%;}
+.quickview button {display:none;}
+.ProductList.List .mosaic-block, .ProductList.List .ProductImage {width:100%;}
+.ProductList.List li {margin-left:auto;}
+.SearchContainer .ProductList.List .productsbox {margin-bottom:10px;}
+
+/* Content Page - 767 and below */
+#LayoutColumn2, .CategoryContent {padding-left:0;}
+
+/* Product Details Page - 767 and below */
+.left-content, .ProductMain {clear:both; float:left; margin:20px auto 0; width:100%;}
+.PrimaryProductDetails .ProductMain {padding:0;}
+.left-content {margin-top:0;}
+.zoomWrapper, .zoomPreload  {display:none !important;}
+.ProductThumbImage img {width:auto !important; max-width:100% !important;}
+.PrimaryProductDetails .ProductThumb .ProductThumbImage .zoomPad {display:block; cursor:pointer !important;}
+#ProductDetails .ProductTinyImageList {float:left;}
+#ProductDetails #ImageScrollPrev, #ProductDetails #ImageScrollNext {margin-top:45px;}
+
+.ProductThumbImage .zoomWindow {display:none !important;}
+.productPage #fancy_overlay, .productPage #fancy_outer, .productPage #fancy_loading {display:none !important;}
+.PrimaryProductDetails .ProductThumb .ProductThumbImage .zoomPad {cursor:default !important;}
+
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {width:100%; margin-bottom:20px;}
+
+/* Cart Page - 767 and bleow */
+.CouponCode #couponcode, .GiftCertificateCode #giftcertificatecode {width:75% !important; clear:none !important;}
+.CartCode .GiftCertificate input.btn, .CartCode .CouponCode input.btn {margin-top:0px;}
+#CartContent .CartContents th { display:none; }
+table.CartContents tbody tr td {padding:12px 0;}
+
+#WishLists table.CartContents tbody tr td, #WishLists table.CartContents thead tr th { padding: 10px 8px; }
+
+.CategoryPagination { margin:0 0 0 4px !important; }
+.SearchSorting.SortBox {margin-top:10px;}
+
+.CartContents .ProductImage {max-width:50%; display:block; margin:0 auto;}
+.CartRemoveLink {position:absolute; top:0; right:0; overflow:hidden;}
+.CartQuantity div.selector {margin-top:5px;}
+.CartContents .mobileView .CartList {overflow:hidden; margin:0 auto 20px;}
+.CartContents .mobileView .ProductDetails .productAttributes {margin:8px auto; }
+.CartContents .mobileView a.CustomizeItemLink {display:block; text-align:center; font-weight:bold; margin-bottom:10px;}
+
+/* Estimate Shipping - 767 and below */
+.EstimateShipping {width:100%; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;} 
+.EstimateShipping dt {width:100% !important; text-align:left;}
+ul.ShippingAddressList li, .CheckoutRedeemCoupon input[type="text"] {width:auto !important;}
+
+/* ChooseShippingAddress - 767 and below */
+#ChooseShippingAddress .TabNav {padding:0;}
+#ChooseShippingAddress .TabNav li a {font-size:12px; padding:0 12px;}
+.CartContents tfoot .SubTotal td {clear:both; /* float:left; width:100%;*/}
+.CheckoutRedeemCoupon label {padding:5px 0; display:block;}
+.CheckoutRedeemCoupon {padding-bottom:10px;}
+
+/* Choose Multiple Address - 767 and below */
+#multiAddressForm {overflow-x:auto;}
+#multiAddressForm p.Submit {text-align:left!important;}
+
+/* Sitemap Page - 767 and below */
+.SitemapPages, .SitemapCategories, .SitemapBrands {width:100%; margin:0 auto; padding:0;}
+#SitemapContent h3 {margin:20px auto 0;}
+#SitemapContent .SitemapPages h3 {margin:0 auto;}
+/* Search Page - 767 and below */
+#SearchTabsList.TabNav, #SearchPageHeader, #SearchTabContent {margin-left:0;}
+#SearchTabsList.TabNav {padding:0;}
+
+/* Header Search Popup - 767 and below */
+table#QuickSearch {box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.QuickSearch:before, .CurrencyChooser:before {top:-11px}
+
+/* Wishlist Page - 767 and below */
+#wishlistsform .CartContents .txt-hide {overflow:visible; width:18px;}
+
+
+.ExpressCheckoutBlock .ExpressCheckoutCompletedContent { display:none; } 
+
+/* Account Recent Item - 767 and below */
+#AccountRecentItems .ProductList li {clear:both; float:none; margin:20px auto 0; display:block;}
+#AccountRecentItems .ProductList li:first-child {margin-top:0;}
+
+/* Brands Page - 767 and below */
+.SubBrandListGrid li .brand-img {height:auto !important;}
+
+/* Search Result Page - 767 and below */
+.SearchContainer .ProductList li, .SearchContainer .ProductList li .mosaic-block {width:100%;}
+
+/* Modal container popup - 767 and below */
+#ModalContainer {top:3% !important; bottom:3% !important;}
+.ModalContent {padding:10px !important;}
+
+/* Fast Cart Popup Box - 767 */
+.fastCartThumb {margin:0 auto;}
+.fastCartThumb, .fastCartItemBox, .fastCartSummaryBox {width:99%; max-width:99%; clear:both; background:none; margin:0 auto 10px;}
+.fastCartSummaryBox .ProceedToCheckout .CheckoutButton .btn, .btn {max-width:100%;}
+
+#fastCartContainer {max-height:100%;}
+#fastCartContainer .ProductList li {margin:1% auto !important; width:100% !important;}
+.fastCartTop {padding:0;}
+
+/* Multiple Address Page - 767 */
+#multiAddressForm td {clear:both; float:left; width:100%; margin:0 auto; padding:5px 0; border:none;}
+#multiAddressForm thead th {display:none;}
+
+#CreateAccountForm .box > dl, #CreateAccountForm p.Submit {margin-left:0 !important;}
+
+.EstimateShipping .form dd {float:none;}
+#CartContent .EstimateShipping dl.form div.selector {width:99%;}
+
+}

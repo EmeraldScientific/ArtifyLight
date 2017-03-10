@@ -1,0 +1,139 @@
+
+#Header {padding:20px 0;}
+
+.PageMenu .CategoryList{
+    display:none;
+    }
+
+.CartContents .CartProductFieldsLink {
+    background: url('%%GLOBAL_TPL_PATH%%/images/GiftWrappingAvailable.png') no-repeat;
+}
+
+.WrappingOptions {
+    background: url('%%GLOBAL_TPL_PATH%%/images/GiftWrappingAvailable.png') no-repeat;
+}  
+
+.VideoOverlay {
+    background-image: url('%%GLOBAL_TPL_PATH%%/images/VideoOverlay.png');
+}
+
+.PageMenu .back {
+    background: url(%%GLOBAL_TPL_PATH%%/images/nav_active.png) no-repeat center top;
+}  
+
+.PageMenu li ul li a.hasSub {
+/* background: url(%%GLOBAL_TPL_PATH%%/images/sub.png) 100% 7px no-repeat; */
+}
+
+#recaptcha_reload_btn {
+    background: url(%%GLOBAL_TPL_PATH%%/images/recapRefresh.png) 0 0 no-repeat !important;
+}
+
+#recaptcha_switch_audio_btn {
+    background: url(%%GLOBAL_TPL_PATH%%/images/recapAudio.png) 0 0 no-repeat !important;
+}
+
+#recaptcha_whatsthis_btn {
+    background: url(%%GLOBAL_TPL_PATH%%/images/recapHelp.png) 0 0 no-repeat !important;
+}
+
+#fancy_close {
+    background: url("%%GLOBAL_TPL_PATH%%/images/icon-close.png") no-repeat scroll 0 0 transparent !important;
+}
+
+.icon-outofstock {
+    background: url(%%GLOBAL_TPL_PATH%%/images/icon-outofstock.png) no-repeat 0 0;
+}
+
+.selected-currency {
+    background: url(%%GLOBAL_TPL_PATH%%/images/icon_arrow_down.png) no-repeat 96% 10px;
+}
+
+#cookieNotification .icon-info {
+    background: url("%%GLOBAL_TPL_PATH%%/images/cookie-sprite.png") no-repeat scroll 0 2px transparent !important;
+}
+
+ul ul ul{
+    list-style-image: url(%%GLOBAL_TPL_PATH%%/images/bullet_line.png);
+}
+
+.multiStep li .icon  {
+    background: url("%%GLOBAL_TPL_PATH%%/images/nav_active.png") no-repeat;
+}
+
+.icon {
+    background: url("%%GLOBAL_TPL_PATH%%/images/icon_sprite.png") no-repeat 0 -27px;
+}
+
+.nav-prev,
+.nav-next {
+    background: url(%%GLOBAL_TPL_PATH%%/images/icon_sprite.png) no-repeat -42px -27px;
+}
+
+.productOptionPickListSwatch .outStock .swatchColour:after,
+.productOptionPickListSwatch .outStock .thumbnail:after,
+.productOptionViewRectangle .outStock span:after {
+    background: url("%%GLOBAL_TPL_PATH%%/images/out-of-stock-bg.png") center no-repeat;
+}
+
+/*.productOptionViewRectangle .outStock span:after {
+    background: url("%%GLOBAL_TPL_PATH%%/images/out-of-stock-bg.png") center no-repeat;
+}*/
+
+.icon { background-image: url("%%GLOBAL_TPL_PATH%%/images/icon_sprite.png"); background-repeat: no-repeat; background-position: 7px -17px; }
+
+.PageMenu li a.hasSub { background: url("%%GLOBAL_TPL_PATH%%/images/menu-arrow.png") no-repeat right center; padding-right:12px !important; }
+
+.ProductList li .ProductActionAdd a.btn { text-indent:-9999px; background-color:#444444; width:30px; height:30px; background-image: url("%%GLOBAL_TPL_PATH%%/images/addtocart.png"); background-repeat: no-repeat; background-position: center; border:0; border-radius:0; }
+
+.treeview .placeholder {
+    background: url(%%GLOBAL_TPL_PATH%%/images/ajax-loader.gif) 0 0 no-repeat;
+}
+
+/* Wishlist Remove icon */
+.mosaic-block .ProductActionAdd .RemoveFromWishlistForm .btn {background:url(%%GLOBAL_TPL_PATH%%/images/removewishlist.png) 8px 8px no-repeat; }
+
+.mosaic-block .ProductActionAdd .RemoveFromWishlistForm .btn:hover {background:url(%%GLOBAL_TPL_PATH%%/images/removewishlist.png) 8px -26px no-repeat #444444; }
+
+a.btn.alt,
+.btn.alt,
+.newsletter-subscription .btn,
+.ProductDetailsGrid .btn.alt,
+.CompareFieldTop a {
+    background: #000;
+}
+
+.Left .CategoryList h3,
+.Left #SideCategoryShopByPrice h3,
+.Left #GiftCertificatesMenu h3,
+.Left #SideSubPageList h3,
+.newsletter-subscription,
+.Left .BrandList h4,
+.CartContents thead,
+.productOptionViewRectangle .option.selectedValue label,
+#prodAccordion .subtitle,
+.brand-name,
+.cycle-pager span.cycle-pager-active,
+.Left .AccountMenu h3,
+.Left #SideAccountStoreCredit h2,
+.Left #BlogRecentPosts h2,
+.CompareFieldTop,
+#sidr-left h3,
+#sidr-left h2,
+.catgridname {
+    background: #28aa4d
+}
+
+.Left .CategoryList h3,
+.Left #SideCategoryShopByPrice h3,
+.Left #GiftCertificatesMenu h3,
+.Left #SideSubPageList h3,
+.Left #SideShopByBrand h3 {
+    background: #28aa4d
+}
+
+#socnet {
+    float: right;
+    margin-top: -40px; 
+    margin-bottom: 0px;
+}

@@ -1,0 +1,31 @@
+<li class="%%GLOBAL_AlternateClass%% Odd ListView" data-product="%%GLOBAL_ProductId%%">
+    <div class="ProductImage QuickView" data-product="%%GLOBAL_ProductId%%" id="img_%%GLOBAL_ProductId%%">
+        %%GLOBAL_ProductThumb%%
+    </div>
+    <div class="mosaic-block bar2">    
+        <a href="javascript:void(0)">
+            <div class="details">
+                <h4 onclick="window.location='%%GLOBAL_ProductLink%%'" id="link_%%GLOBAL_ProductId%%" data-href="%%GLOBAL_ProductLink%%"> %%GLOBAL_ProductName%%</h4>
+                <p class="ProductDescription">%%GLOBAL_ProductDescription%%</p>
+            </div>
+            <div class="clearfix productspace">
+                <em class="p-price">%%GLOBAL_ProductPrice%%</em>
+                <div class="ProductPriceRating">
+                    <span class="Rating Rating%%GLOBAL_ProductRating%%"><img src="%%GLOBAL_IMG_PATH%%/IcoRating%%GLOBAL_ProductRating%%.png" alt="" /></span>
+                </div>
+            </div>
+            <div class="clearfix productsbox">
+                <div class="ProductActionAdd" style="display:%%GLOBAL_HideActionAdd%%;">
+                    
+                    <div class="addtowishlist"><button type="button" title="Add To Wishlist" onclick="addToWishList('%%GLOBAL_ProductLink%%','%%GLOBAL_ProductId%%')" class="fa fa-heart"></button></div>
+                    
+                    <div class="compare"><button type="button" title="Add to Compare"  onclick="addToCompare('%%GLOBAL_ProductId%%');" class="fa fa-random"></button></div>
+                    
+                   <!-- <div class="quickview"><button type="button" title="Quick View"  onclick="quickView('%%GLOBAL_ProductId%%');" class="icon-eye-open"></button></div> -->
+                    
+                    <button data-href='%%GLOBAL_ProductURL%%' type="button" class="btn addToCartButton icon-%%GLOBAL_ProductAddText%%" title="%%GLOBAL_ProductAddText%%">%%GLOBAL_ProductAddText%%</button>
+                </div>
+            </div>
+        </a>
+    </div>   
+</li>

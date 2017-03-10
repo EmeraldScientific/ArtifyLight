@@ -1,0 +1,25 @@
+<tr>
+    <td>
+        <input type="checkbox" name="deletewishlist[]" value="%%GLOBAL_WishListID%%" />
+    </td>
+    <td>
+        <a href="wishlist.php?action=viewwishlistitems&amp;wishlistid=%%GLOBAL_WishListID%%">%%GLOBAL_WishListName%%</a>
+    </td>
+    <td>
+        %%GLOBAL_NumOfItems%%
+    </td>
+    <td>
+        %%GLOBAL_WishListShared%%
+    </td>
+    <td>
+        <div class="txt-hide">
+            <a href="wishlist.php?action=editwishlist&amp;wishlistid=%%GLOBAL_WishListID%%" class="fa fa-pencil" title="%%LNG_Edit%%"><!--%%LNG_Edit%% !--></a>
+            <a href="#" onclick = "ValidateDeleteWishlist(false, %%GLOBAL_WishListID%%); return false;" class="fa fa-trash" title="%%LNG_Delete%%"><!--%%LNG_Delete%%!--></a>
+            %%GLOBAL_ShareWishListLink%%
+        </div>
+    </td>
+</tr>
+
+<script>
+   jQuery('#wishlistsform .txt-hide a').not('a[class^="fa-"]').addClass('fa fa-share-alt').text('');
+</script>

@@ -1,0 +1,72 @@
+<div class="footer">
+    <div class="inner">
+        
+        %%Panel.SideNewsletterBox%%
+        
+        
+        <div class="footer-links">
+            <a href="javascript:void(0);" class="backtoTop fa fa-chevron-circle-up" title="Scroll to Top"></a>
+            <div class="clearfix inner">
+                <div class="FloatRight footersocial">
+                    <div id="Footersocnet" class="Block SocialConnect Moveable Panel">
+                        <ul>
+                            %%SNIPPET_SocialLinks%%
+                        </ul>
+                    </div>
+                    <script>
+                        jQuery('#socnet ul li').each(function(){
+                        jQuery(this).find('a').attr('target','_blank');
+                        });
+                    </script>
+                    
+                </div>
+                <div class="FloatLeft">
+                       <p>Copyright %%GLOBAL_Year%% <strong>%%GLOBAL_StoreName%%</strong>. All Rights Reserved. | %%SNIPPET_SitemapLink%% </p>
+
+                    <p class="footercurrency" style="display:none;">%%GLOBAL_AllPricesAreInCurrency%%</p> 
+                    %%GLOBAL_DebugDetails%%
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div style="display: none;" id="QuickCartPanel">
+    %%Panel.SideCartContents%%
+</div>
+
+
+
+%%GLOBAL_DesignModeHTML%%
+%%GLOBAL_QueryList%%
+%%GLOBAL_DesignModeScriptTag%%
+%%GLOBAL_LiveChatFooterCode%%
+
+
+
+%%GLOBAL_FooterScripts%%
+%%SNIPPET_FastCartThickBoxJs%%
+
+<script>
+    jQuery('.backtoTop').click(function(){
+    jQuery("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+    });
+    jQuery('#LayoutColumn1 .SubCategoryList ul li').each(function() {
+    jQuery(this).prepend('<span class="fa fa-angle-right"></span>');
+    });
+    
+    /* Sticky Footer Starts */
+    jQuery(window).bind("load", function() {
+    var footer = $(".footer");
+    var pos = footer.position();
+    var height = $(window).height();
+    height = height - pos.top;
+    height = height - footer.height();
+    if (height > 0) {
+    footer.css({'margin-top' : height+'px'});
+    }
+    });
+    
+</script>

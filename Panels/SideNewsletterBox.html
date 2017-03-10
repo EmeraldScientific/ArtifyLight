@@ -1,0 +1,33 @@
+%%GLOBAL_NewsletterBoxControlScript%%
+<div class="newsletter-subscription" id="SideNewsletterBox">
+	<div class="inner">
+		<div class="grid">
+			<div class="grid__item one-third">
+				
+				<h4>Sign up for our newsletter</h4>
+			</div>
+			<div class="grid__item two-thirds">
+				
+				<form action="%%GLOBAL_ShopPath%%/subscribe.php" method="post" id="subscribe_form" class="subscribe_form" name="subscribe_form">
+					<input type="hidden" name="action" value="subscribe" />
+					<ul>
+						<li class="inputForm">
+							<label for="nl_first_name">Name</label>
+							<input class="Textbox autobox" value="Name" id="nl_first_name" name="nl_first_name" type="text" />
+						</li>
+						<li class="inputForm">
+							<label for="nl_email">Email</label>
+							<input class="Textbox autobox" value="Email" id="nl_email" name="nl_email" type="text" />
+						</li>
+						<li>
+							
+							<input value="Submit" class="btn" type="submit" />
+							
+						</li>
+					</ul>	
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+%%Panel.NewsletterJavaScript%%

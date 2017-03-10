@@ -1,0 +1,67 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+%%Panel.HTMLHead%%
+<body class="brandsPage facetedbrand">
+    <div class="page">
+        %%Panel.Header%%
+        <div class="main">
+            <div class="inner">
+                %%Panel.WrapperBanner%%
+                %%Panel.BrandBreadcrumb%%
+                <div class="productlist-page">
+                    %%Banner.TopBanner%%
+                    <h1 class="TitleHeading">%%GLOBAL_TrailBrandName%%</h1>
+                    <div class="Content Wide %%GLOBAL_ExtraCategoryClass%%" id="LayoutColumn1">
+                        <div class="product-nav">
+                            %%SNIPPET_CategorySortBox%%
+                            %%SNIPPET_BrandPaging%%
+                            <div class="clear"></div>
+                        </div>
+                        <!-- Faceted Search Brand Starts -->
+                        <button class="js-faceted-search-action Filterbtn btn" style="display:none;">%%LNG_FilterBy%%</button>
+                        <div class="Left js-faceted-search-column">
+                            %%Panel.FacetedSearch%%
+                            %%Panel.SideShopByBrand%%
+                        </div>
+                        <div class="Content Wide %%GLOBAL_ExtraCategoryClass%%" id="LayoutColumn2">
+                            <h1 class="TitleHeading">%%GLOBAL_TrailBrandName%%</h1>
+                            <div class="product-nav">
+                                %%SNIPPET_BrandPaging%%
+                                %%SNIPPET_CategorySortBox%%
+                                
+                                <div class="clear"></div>
+                            </div>
+                            <div class="BlockContent">                
+                                <script type="text/javascript">
+                                    lang.CompareSelectMessage = '%%LNG_CompareSelectMessage%%';
+                                </script>
+                                
+                                <form name="frmCompare" id="frmCompare" action="%%GLOBAL_CompareLink%%" method="get" onsubmit="return compareProducts('%%GLOBAL_CompareLink%%')">
+                                    %%Panel.BrandProductListing%%
+                                    
+                                    <div class="product-nav btm">
+                                        <div class="PagingBottom">
+                                            %%SNIPPET_BrandPaging%%
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <!-- <div class="CompareButton" style="display:%%GLOBAL_HideCompareItems%%">
+                                    <input value="%%LNG_CompareSelected%%"  type="submit" class="btn alt" />
+                                </div> -->
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Faceted Search Brand Ends -->
+                    </div>
+                    %%Banner.BottomBanner%%
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        %%Panel.Footer%%
+    </div>
+</body>
+</html>

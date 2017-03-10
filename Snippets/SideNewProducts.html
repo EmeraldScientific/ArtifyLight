@@ -1,0 +1,21 @@
+<li class="%%GLOBAL_AlternateClass%%">
+    <div class="cover">
+        <div class="ProductImage QuickView" data-product="%%GLOBAL_ProductId%%" id="img_%%GLOBAL_ProductId%%">
+            %%GLOBAL_ProductThumb%%
+        </div>
+        <div class="ProductDetails">
+            <strong><a href="%%GLOBAL_ProductLink%%" id="link_%%GLOBAL_ProductId%%">%%GLOBAL_ProductName%%</a></strong>
+        </div>
+        <div class="ProductPriceRating">
+            <strong>%%GLOBAL_ProductPrice%%</strong>
+            <span class="Rating Rating%%GLOBAL_ProductRating%%"><img src="%%GLOBAL_IMG_PATH%%/IcoRating%%GLOBAL_ProductRating%%.png" alt="" %%GLOBAL_ProductRatingImageDimensions%% style="%%GLOBAL_HideProductRating%%" /></span>
+        </div>
+        <div class="clearfix productsbox" >
+            <div class="ProductActionAdd" style="display:%%GLOBAL_HideActionAdd%%;">
+                <div class="addtowishlist"><button type="button" title="Add to Wishlist" onclick="addToWishList('%%GLOBAL_ProductLink%%','%%GLOBAL_ProductId%%')" class="fa fa-heart"></button></div>
+                <div class="compare"><button type="button" title="Add to Compare"  onclick="addToCompare('%%GLOBAL_ProductId%%');" class="fa fa-random"></button></div>
+                <button data-href='%%GLOBAL_ProductURL%%' type="button" class="btn addToCartButton icon-%%GLOBAL_ProductAddText%%" title="%%GLOBAL_ProductAddText%%">%%GLOBAL_ProductAddText%%</button>
+            </div>
+        </div>
+    </div>
+</li>

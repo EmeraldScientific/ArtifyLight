@@ -1,0 +1,13 @@
+<div id="SearchForm" class="clearfix">
+    <form action="%%GLOBAL_ShopPath%%/search.php" method="get" onsubmit="return check_small_search_form()">
+        <label for="search_query">%%LNG_Search%%</label>
+        <input type="text" name="search_query" id="search_query" class="Textbox autobox" value="%%LNG_Search%%" />
+        <button type="submit" class="Button fa fa-search" value="" name="Search" title="Search"></button>
+    </form>
+</div>
+
+<script type="text/javascript">
+    var QuickSearchAlignment = 'right';
+    var QuickSearchWidth = '350px';
+    lang.EmptySmallSearch = "%%LNG_EmptySmallSearch%%";
+</script>

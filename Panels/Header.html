@@ -1,0 +1,144 @@
+<div class="header">
+    <div class="inner">
+        
+        <div id="AjaxLoading"><img src="%%GLOBAL_IMG_PATH%%/loader.png" alt="" />&nbsp;%%LNG_LoadingPleaseWait%%</div>
+        %%GLOBAL_MaintenanceNotice%%
+        %%Panel.TopMenu%%
+        
+        <div id="Header">
+            <div class="inner clearfix">  
+                
+                <div id="Logo">
+                    %%GLOBAL_HeaderLogo%%
+                </div>
+                
+                <div class="header-right">
+                    <div class="headright-midd">
+                        <div class="FloatRight desktopView shoppingCartLink">
+                            <ul style="display:%%GLOBAL_HidePurchasingOptions%%">
+                                <li class="last CartLink" style="display:%%GLOBAL_HideCartOptions%%">
+                                    <a href="%%GLOBAL_ShopPathNormal%%/cart.php" title="%%LNG_ViewCart%%" class="CartLink">
+                                        <div class="FloatLeft mr10 carttext">
+                                            <b>Shopping Cart</b><br/>
+                                            <span class="item">%%GLOBAL_CartItems%%</span>
+                                        </div>
+                                        <i class="fa fa-shopping-cart" title="View Cart">&nbsp;</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        %%Panel.HeaderSearch%%
+                        
+                    </div>                 
+                </div>
+                <a href="javascript:void(0);" class="mobileMenuIcon mobile fa fa-bars FloatLeft" style="display:none;"></a>
+            </div>
+        </div>
+        <div class="PageMenu clearfix">
+            <div class="inner">
+                <div class="desktopView mobileSideMenu">
+                    <span class="homeicon First %%GLOBAL_ActivePageHomeClass%%">
+                        <a href="%%GLOBAL_ShopPathNormal%%/" title="Home" class="fa fa-home">&nbsp;</a>
+                    </span>
+                    <a href="javascript:void(0);" class="closeSidrBtn fa fa-angle-left" onClick="jQuery('.mobileMenuIcon').click();" style="display:none;" title="Close Panel"></a>
+                    
+                    %%Panel.SideCategoryList%%
+                    %%Panel.PagesMenu%%
+                    %%Panel.SocialLinks%% 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<style>
+    .SubCategoryListGrid br {display:none;height:0;}
+</style>
+<script>
+   
+
+    jQuery(document).ready(function(){
+    jQuery("#sidr-left ul").removeClass("sf-menu");
+    jQuery("#sidr-left .SideCategoryListFlyout ul").removeClass("sf-vertical");
+    
+    jQuery(".searchtoggle").click(function(){
+    jQuery("#SearchForm").slideToggle("fast");
+    
+    jQuery(".searchtoggle").toggleClass("Active");
+    });
+    
+    /* Header Height */
+    var headerheight = jQuery("#Header").height();
+    var logoheight = jQuery("#Logo").height();
+    jQuery("#Logo").css("margin-top", (headerheight-logoheight)/2);
+    
+    
+    $('.SubCategoryListGrid').imagesLoaded( function() {
+    
+    var imgMaxheight= 0;
+    jQuery(".SubCategoryListGrid li").each(function() {
+    if(jQuery.trim(jQuery(this).html()) == "")
+    {
+    jQuery(this).addClass("lastRow").hide();
+    }
+    var imgheight = jQuery(this).find("a img").height();
+    if(imgheight > imgMaxheight )
+    {
+    imgMaxheight = imgheight;
+    }
+    });
+    jQuery(".SubCategoryListGrid li,.SubCategoryListGrid li .border").height(imgMaxheight);
+    jQuery(".SubCategoryListGrid li").each(function() {
+    var boxheight= jQuery(this).height();
+    var imgheight = jQuery(this).find("a img").height();
+    var btnheight = jQuery(".catgridname").outerHeight(true); 
+    
+    var count = (boxheight-imgheight-btnheight)/2
+    if(imgheight >= boxheight )
+    {
+    count = 0;
+    imgMaxheight = imgheight;
+    }
+    jQuery(this).find("a img").css("padding-top", count);
+    });
+    
+    });
+    
+    $('.SubBrandListGrid').imagesLoaded( function() {
+    var imgMaxheight= 0;
+    jQuery(".SubBrandListGrid li").each(function() {
+    var imgheight = jQuery(this).find("a img").height();
+    if(imgheight > imgMaxheight )
+    {
+    imgMaxheight = imgheight;
+    }
+    });
+    
+    jQuery(".SubBrandListGrid li").height(imgMaxheight);
+    jQuery(".SubBrandListGrid li").each(function() {
+    var brandboxheight= jQuery(this).height();
+    var brandimgheight = jQuery(this).find(".brand-img img").height();
+    var brandbtnheight = jQuery(".brand-name").outerHeight(true);    
+    var count = (brandboxheight-brandimgheight-brandbtnheight)/2;
+    if(brandimgheight >= brandboxheight )
+    {
+    count = 0;
+    imgMaxheight = brandimgheight;
+    }
+    jQuery(this).find(".brand-img").css("padding-top",count);
+    });
+    });
+    
+    
+    jQuery(".btn.addToCartButton.icon-Out.of.stock.at.present").text("Out of stock");
+    
+    jQuery(".topMenuIcon").click(function(){
+    jQuery(".currency-converter").toggleClass("Show");
+    jQuery(".TopMenu > .inner").toggleClass("currency");
+    });
+    
+    
+    
+    }); 
+</script>

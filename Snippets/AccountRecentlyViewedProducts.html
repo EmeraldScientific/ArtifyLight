@@ -1,0 +1,31 @@
+<li class="%%GLOBAL_AlternateClass%%">
+    <div class="mosaic-block bar2">    
+        <a href="javascript:void(0)"  class="mosaic-overlay">
+            <div class="details">
+                <h4 onclick="window.location='%%GLOBAL_ProductLink%%'" id="link_%%GLOBAL_ProductId%%" data-href="%%GLOBAL_ProductLink%%"> %%GLOBAL_ProductName%%</h4><br/>
+            </div>
+            <div class="clearfix productsbox">
+                <div class="ProductActionAdd" style="display:%%GLOBAL_HideActionAdd%%;">
+                    
+                    <div class="addtowishlist"><button type="button" title="Add to Wishlist" onclick="addToWishList('%%GLOBAL_ProductLink%%','%%GLOBAL_ProductId%%')" class="fa fa-heart">
+                       
+                        </button></div>
+                    <div class="compare"><button type="button" title="Add to Compare"  onclick="addToCompare('%%GLOBAL_ProductId%%');" class="fa fa-random"></button></div>
+                </div>
+            </div>
+        </a>
+        <div class="mosaic-backdrop">
+            <div class="ProductImage QuickView" data-product="%%GLOBAL_ProductId%%" id="img_%%GLOBAL_ProductId%%">
+                %%GLOBAL_ProductThumb%%
+            </div>
+        </div>
+        
+    </div>   
+    <div class="clearfix productspace">
+        <em class="p-price">%%GLOBAL_ProductPrice%%</em>
+        <div class="ProductPriceRating">
+            <span class="Rating Rating%%GLOBAL_ProductRating%%"><img src="%%GLOBAL_IMG_PATH%%/IcoRating%%GLOBAL_ProductRating%%.png" alt="" /></span>
+        </div>
+    </div>
+    
+</li>
