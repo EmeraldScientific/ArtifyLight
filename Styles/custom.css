@@ -151,3 +151,11 @@ a.btn.alt,
     display: none;
 }
 /* ---> end product review options */
+
+/* --- temporary until color scheme implemented -- */
+.treeview li a:hover,
+.treeview li a.selected,
+.treeview li li a.selected,
+.treeview li li li a.selected {
+    background: #ddd;
+}
